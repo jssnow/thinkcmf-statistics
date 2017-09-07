@@ -1,5 +1,6 @@
 ThinkCMF 5.0
 ===============
+### 本项目是在ThinkCMF的基础上开发数据统计可视化插件（在public/plugins/statistics）目录下
 ### 最新讲座
 https://segmentfault.com/l/1500000010288611
 
