@@ -45,7 +45,7 @@ class RegisterController extends HomeBaseController
         if ($this->request->isPost()) {
             $rules = [
                 'captcha'  => 'require',
-                'code'     => 'require',
+//                'code'     => 'require',
                 'password' => 'require|min:6|max:32',
 
             ];
@@ -74,10 +74,10 @@ class RegisterController extends HomeBaseController
             }
 
             if(!$isOpenRegistration){
-                $errMsg = cmf_check_verification_code($data['username'], $data['code']);
-                if (!empty($errMsg)) {
-                    $this->error($errMsg);
-                }
+//                $errMsg = cmf_check_verification_code($data['username'], $data['code']);
+//                if (!empty($errMsg)) {
+//                    $this->error($errMsg);
+//                }
             }
 
             $register          = new UserModel();
